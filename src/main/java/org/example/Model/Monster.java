@@ -2,17 +2,16 @@ package org.example.Model;
 
 public class Monster extends Character {
 
-    public Monster(int x, int y, String token) {
+    public Monster(int x, int y, String token, String greeting) {
         super(x, y, token);
+        this.greeting = greeting;
     }
 
-    public void Greeting (){
-        System.out.println(Greeting);
+    String greeting;
+
+    public String Greeting() {
+        return greeting;
     }
-
-    String Greeting = "You have been caught";
-
-    
 
 
 }
