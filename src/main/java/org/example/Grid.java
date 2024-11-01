@@ -23,15 +23,19 @@ public class Grid {
         for(int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 if(player.getX() == i && player.getY() == j) {
-                    System.out.print(player.getToken() + " ");
+                    System.out.print(" " + player.getToken() + " ");
                 } else {
+                    boolean monsterPrinted = false;
                     for(Monster monster : monsters) {
                         if (monster.getX() == i && monster.getY() == j){
-                            System.out.print(monster.getToken() + " ");
+                            System.out.print(" " + monster.getToken() + " ");
+                            monsterPrinted = true;
                             break;
                         }
                     }
-                    System.out.print(". ");
+                    if(!monsterPrinted) {
+                        System.out.print(" . ");
+                    }
                 }
             }
             System.out.println();
