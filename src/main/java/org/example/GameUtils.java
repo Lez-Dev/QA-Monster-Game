@@ -1,6 +1,9 @@
-package org.example.Model;
+package org.example;
 
 import org.example.Grid;
+import org.example.Model.Monster;
+import org.example.Model.Player;
+import org.example.Model.Treasure;
 
 import java.util.ArrayList;
 import java.util.List;
