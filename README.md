@@ -27,16 +27,19 @@ caughtPlayer()
 -Player *extend* character
 move()
 
+-Treasure *extend* character
+ifFound()
+
 -Grid
 size (x,y) [][]
 printGrid()
 boolean isValidPosition()
-
--Treasure *extend* character
-ifFound()
 
 .*....
 ....&.
 ......
 .P....
 ......
+
+Game Runner/Logic
+- in order to run and initialise a game
